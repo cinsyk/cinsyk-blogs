@@ -26,11 +26,3 @@ jobs:
       # 生成静态文件
       - name: Build
         run: npm install && npm run docs:build
-
-      # 部署到 GitHub Pages， 使用了第三方作者的 action
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: main
-          FOLDER: docs/.vuepress/dist
