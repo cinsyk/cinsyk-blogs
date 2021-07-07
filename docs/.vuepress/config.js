@@ -7,7 +7,7 @@ module.exports = {
     description: '前端 HTML CSS JavaScript Vue Angular Docker Node Mongodb',
     themeConfig: {
         // 导航栏 Logo
-        logo: '/images/logo.jpg',
+        logo: './images/logo.jpg',
         // 导航栏链接
         nav: [
             { text: '首页', link: '/' },
