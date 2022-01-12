@@ -60,7 +60,7 @@ function transGroup(dirName) {
         case 'service':
             return '服务器'
         default:
-            return '未定义分组'
+            return dirName
     }
 }
 

@@ -11,8 +11,9 @@ module.exports = {
         nav: [
             { text: '首页', link: '/' },
             { text: '拾遗', link: '/resource/' },
-            { text: '基础', link: '/frontend/' },
-            { text: '进阶', link: '/forwards/' },
+            // { text: '基础', link: '/frontend/' },
+            // { text: '进阶', link: '/forwards/' },
+            { text: '面试', link: '/interview/' },
             { text: 'Github', link: 'https://github.com/cinsyk', target: '_blank' },
             { text: '鄂ICP备18012555号', link: 'https://beian.miit.gov.cn/#/Integrated/index', target: '_blank' },
         ],
@@ -20,6 +21,10 @@ module.exports = {
         sidebar,
         // 搜索结果数量
         searchMaxSuggestions: 5,
-        lastUpdated: '上次更新',
+        lastUpdated: '最后更新',
+    },
+    markdown: {
+        lineNumbers: true,
+        plugins: ['task-lists']
     }
 }
