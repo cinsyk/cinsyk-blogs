@@ -1,7 +1,12 @@
 # docker 学习
 ## docker 
-> docker是什么。。。。。
-
+#### 相关命令
+``` yaml
+-d：在后台运行
+-p ：容器的80端口映射到127.0.0.2:8080
+--rm：容器停止运行后，自动删除容器文件
+--name：容器的名字为mynginx
+```
 #### 程序相关
 ``` yml
 # 配置文件
@@ -105,14 +110,14 @@ docker run -d -v /registry:/var/lib/registry -p 5000:5000 --restart=always --pri
 ``` yml
 
 # 配置http传输
-"insecure-registries": ["仓库ip:5000"]
+"insecure-registries": ["仓库ip:端口号"]
 
 # 查看镜像
-curl [仓库ip]:5000/v2/_catalog
+curl [仓库ip]:[端口号]/v2/_catalog
 
 # 上传镜像
-docker tag [镜像名] [tag名]
-docker push [tag名]
+docker tag IMAGE[:TAG] [REGISTRY_HOST[:REGISTRY_PORT]/]REPOSITORY[:TAG]
+docker push [REGISTRY_HOST[:REGISTRY_PORT]/]REPOSITORY[:TAG]
 ```
 
 ## 参考文章

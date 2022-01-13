@@ -1,8 +1,4 @@
-FROM node:16.4
-ENV NODE_ENV=production
-ENV HOST 0.0.0.0
-RUN mkdir -p /vuepress
-COPY . /vuepress
-WORKDIR /vuepress
-RUN npm install & npm run docs:build
+FROM nginx
 EXPOSE 3000
+COPY /docs/.vuepress/dist /usr/share/nginx/html
+ENTRYPOINT nginx -g "daemon off;"
