@@ -1,7 +1,7 @@
 ---
 home: true
 lang: zh-CN
-heroImage: /images/logo.jpg
+heroImage: ./images/logo.jpg
 tagline: 不想当产品的前端不是一个好测试
 actionText: Just Do It →
 actionLink: /html/html5.md
