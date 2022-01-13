@@ -35,7 +35,11 @@ function forEachDir(dir, options, list, level) {
                 prefix: item,
                 children: []
             };
-            list.push(obj);
+            if (list instanceof Array) {
+                list.push(obj);
+            } else {
+                list.children.push(obj);
+            }
             forEachDir(fullpath, options, obj);
         } else {
             let childName = item;
