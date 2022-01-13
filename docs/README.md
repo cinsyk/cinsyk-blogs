@@ -7,10 +7,10 @@ actionText: Just Do It →
 actionLink: /html/html5.md
 features:
 - title: 拾遗
-  details: 日常记录所学知识点
-- title: 基础
-  details: 基础不牢地动山摇！
-- title: 进阶
-  details: 为自己的前端小屋添砖加瓦
+  details: 日常记录知识点
+- title: 面试
+  details: 以面试驱动学习
+- title: 其他
+  details: 未完持续...
 footer: MIT Licensed | Copyright © 2021 - Cinsyk
 ---
