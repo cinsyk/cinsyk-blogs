@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "markdown-it-task-lists": "^2.1.1",
-    "vuepress": "^1.8.2"
+    "markdown-it-task-lists": "~2.1.1",
+    "vuepress": "~1.8.2"
   }
 }
